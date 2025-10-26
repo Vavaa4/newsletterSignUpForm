@@ -31,6 +31,8 @@ function dismissSection(){
     cardElement.style.display = 'flex';
     successElemet.style.display = 'none';
     formElement.reset();
+    inputElement.classList.remove('error');
+    spanElement.style.display = 'none';
 }
 
 formElement.addEventListener('submit', handleSubmit);
